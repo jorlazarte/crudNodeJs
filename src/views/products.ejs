@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Privado</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+	<header>
+		
+		<nav>
+			<a href="/">Inicio</a>
+			<a href="/products">Productos</a>
+		</nav>
+	</header>
+	<main>
+	<h1>PRODUCTOS</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Título</th>
+				<th>Descripción</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% products.forEach(product => { %>
+
+			<tr>
+				<td><%= product.title %></td>
+				<td><%= product.description %></td>
+			</tr>
+
+			<% }); %>
+		</tbody>
+	</table>
+	</main>
+	
+	<footer></footer>
+</body>
+</html>
