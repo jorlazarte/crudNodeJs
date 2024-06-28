@@ -5,7 +5,9 @@ const path = require('path');
 const index = (req, res) => {
 	//res.send('hola que tal? cómo estás?');
 	//console.log(__dirname);
-	res.sendFile(path.resolve(__dirname, '../../private/index.html')); //resolve toma la carpeta actual y se mueve dentro del mismo
+	//res.sendFile(path.resolve(__dirname, '../../private/index.html')); //resolve toma la carpeta actual y se mueve dentro del mismo
+
+	res.render('index');
 };
 
 //exportamos para poder levantar en main.router.js
